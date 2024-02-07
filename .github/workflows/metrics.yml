@@ -61,12 +61,17 @@ jobs:
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
           plugin_lines_sections: base
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit
           plugin_people: yes
           plugin_people_limit: 24
           plugin_people_size: 28
           plugin_people_types: followers, following
           plugin_projects: yes
+          plugin_projects_descriptions: yes
           plugin_projects_limit: 4
+          plugin_projects_repositories: Arch-Frost/GeoNotify, Arch-Frost/Jinxed-Sorcerers
           plugin_stars: yes
           plugin_stars_limit: 4
           plugin_topics: yes
