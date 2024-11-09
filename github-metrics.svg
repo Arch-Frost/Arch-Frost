@@ -1875,7 +1875,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>3b1b/manim</span>
-                                        <span>starred 27 days ago</span>
+                                        <span>starred 28 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">Animation engine for explanatory math videos</div>
@@ -2442,7 +2442,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 5.44m out of 227m repositories</span>
+                                    <span class="gh">ranked 5.44m out of 225m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">1</div>
                                     </div>
@@ -2557,7 +2557,7 @@
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 9 Nov 2024, 23:23:37 (timezone Asia/Karachi) with lowlighter/metrics@3.35.0-beta</span>
+                <span>Last updated 10 Nov 2024, 00:17:10 (timezone Asia/Karachi) with lowlighter/metrics@3.35.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
