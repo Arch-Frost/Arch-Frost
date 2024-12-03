@@ -241,7 +241,7 @@
                     <rect mask="url(#languages-bar)" x="0" y="0" width="409.7780257904765" height="8" fill="#f1e05a"/>
                     <rect mask="url(#languages-bar)" x="409.7780257904765" y="0" width="20.572738683069634" height="8" fill="#b07219"/>
                     <rect mask="url(#languages-bar)" x="430.3507644735461" y="0" width="19.470214158396494" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="449.82097863194264" y="0" width="9.058834471148472" height="8" fill="#563d7c"/>
+                    <rect mask="url(#languages-bar)" x="449.82097863194264" y="0" width="9.058834471148472" height="8" fill="#663399"/>
                     <rect mask="url(#languages-bar)" x="458.87981310309107" y="0" width="0.968879241422444" height="8" fill="#e34c26"/>
                     <rect mask="url(#languages-bar)" x="459.8486923445135" y="0" width="0.15130765548647035" height="8" fill="#384d54"/>
                 </svg>
@@ -266,7 +266,7 @@
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                            <path fill="#563d7c" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                            <path fill="#663399" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                         </svg>
                         CSS
                     </div>
@@ -2486,7 +2486,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 5.47m out of 226m repositories</span>
+                                    <span class="gh">ranked 5.47m out of 231m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">1</div>
                                     </div>
@@ -2601,7 +2601,7 @@
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 3 Dec 2024, 17:36:38 (timezone Asia/Karachi) with lowlighter/metrics@3.35.0-beta</span>
+                <span>Last updated 3 Dec 2024, 18:32:38 (timezone Asia/Karachi) with lowlighter/metrics@3.35.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
