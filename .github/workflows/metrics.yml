@@ -107,7 +107,7 @@ jobs:
       - name: XKCD of the day
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.xkcd.png
+          filename: images/metrics-xkcd.png
           token: NOT_NEEDED
           base: ""
           plugin_screenshot: yes
