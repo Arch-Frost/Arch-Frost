@@ -97,15 +97,9 @@ jobs:
           plugin_code_load: 400
           plugin_code_visibility: public
 
-
-  
-      - name: XKCD of the day
-        uses: lowlighter/metrics@latest
-        with:
-          filename: images/metrics-xkcd.svg
-          token: NOT_NEEDED
-          base: ""
+          # XKCD of the day
           plugin_screenshot: yes
           plugin_screenshot_title: XKCD of the day
           plugin_screenshot_url: https://xkcd.com
           plugin_screenshot_selector: "#comic img"
+          
