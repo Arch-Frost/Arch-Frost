@@ -2,10 +2,9 @@
 name: Metrics
 on:
   # Schedule updates (each day)
-  schedule: [{cron: "0 0 * * *"}]
+  schedule: [{cron: "0 7 * * *"}]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
 jobs:
   lowlighter-github-metrics:
     name: Lowlighter GitHub Metrics
@@ -13,17 +12,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Classic template metrics svg creation 
+      - name: Left Metrics SVG
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Configuration
-          filename: images/metrics.classic.svg
+          filename: images/metrics-left.svg
           user: Arch-Frost
           template: classic
-          base: header, activity, community, metadata
-          config_display: columns
+          base: header, activity, metadata
+          base_indepth: yes
           config_octicon: yes
           config_timezone: Asia/Karachi
 
@@ -35,7 +34,7 @@ jobs:
           plugin_lines: yes
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
-          plugin_lines_sections: history
+          plugin_lines_sections: repositories
 
           # Languages
           plugin_languages: yes
@@ -55,7 +54,7 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit
 
-          # Commit Calender
+          # Contribution Calendar
           plugin_calendar: yes
           plugin_calendar_limit: 1
           plugin_isocalendar: yes
@@ -64,6 +63,26 @@ jobs:
           # Stars
           plugin_stars: yes
           plugin_stars_limit: 4
+
+          # XKCD of the day
+          plugin_screenshot: yes
+          plugin_screenshot_title: XKCD of the day
+          plugin_screenshot_url: https://xkcd.com
+          plugin_screenshot_selector: "#comic img"
+        
+
+      - name: Right Metrics SVG
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Configuration
+          filename: images/metrics-right.svg
+          user: Arch-Frost
+          template: classic
+          base: ""
+          config_octicon: yes
+          config_timezone: Asia/Karachi
 
           # People
           plugin_people: yes
@@ -84,7 +103,13 @@ jobs:
           plugin_code_load: 400
           plugin_code_visibility: public
 
-          # XKCD of the day
+  
+      - name: XKCD of the day
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.xkcd.png
+          token: NOT_NEEDED
+          base: ""
           plugin_screenshot: yes
           plugin_screenshot_title: XKCD of the day
           plugin_screenshot_url: https://xkcd.com
