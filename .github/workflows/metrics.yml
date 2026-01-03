@@ -60,16 +60,6 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-          # Stars
-          plugin_stars: yes
-          plugin_stars_limit: 4
-
-          # XKCD of the day
-          plugin_screenshot: yes
-          plugin_screenshot_title: XKCD of the day
-          plugin_screenshot_url: https://xkcd.com
-          plugin_screenshot_selector: "#comic img"
-        
 
       - name: Right Metrics SVG
         uses: lowlighter/metrics@latest
@@ -83,6 +73,10 @@ jobs:
           base: ""
           config_octicon: yes
           config_timezone: Asia/Karachi
+
+          # Stars
+          plugin_stars: yes
+          plugin_stars_limit: 4
 
           # People
           plugin_people: yes
@@ -103,11 +97,12 @@ jobs:
           plugin_code_load: 400
           plugin_code_visibility: public
 
+
   
       - name: XKCD of the day
         uses: lowlighter/metrics@latest
         with:
-          filename: images/metrics-xkcd.png
+          filename: images/metrics-xkcd.svg
           token: NOT_NEEDED
           base: ""
           plugin_screenshot: yes
